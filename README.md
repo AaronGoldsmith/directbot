@@ -1,4 +1,8 @@
-## Noops Challenge 3
+
+# noop challenge
+## Challenge #3 - [Directbot](https://noopschallenge.com/challenges/directbot)
+
+Github posed the noops challenge: https://noopschallenge.com/  -- I accepted
 ### Directbot v1.0
 
 ![challenge3](public/challenge3.gif)
@@ -14,6 +18,8 @@ Initial velocity/direction induced through directbot
 - DOWN = -y
 - LEFT = -x
 - RIGHT = +x
+
+Colors and initial positions set by [Hexbot](https://noopschallenge.com/challenges/hexbot)
 
 ## Future implementations
 - Fetch new directions all at once
