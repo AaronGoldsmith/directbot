@@ -1,0 +1,80 @@
+html, body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgba(0,0,0,0.7);
+  margin: 0;
+  padding: 0;
+  background:rgba(0,0,0,0.02)
+}
+canvas {
+  display: block;
+  padding: 15px;
+  margin: 0px auto;
+  border-radius: 14px;
+}
+
+.btn{
+  box-sizing: content-box;
+  padding: 5px 20px;
+  vertical-align: middle;
+  border-radius: 4px;
+  border: 1px solid rgba(0,0,0,0.25);
+  width: 50px;
+  margin:40px auto;
+  position:relative;
+  left: 20px;
+  cursor: pointer;
+
+
+}
+.btn:hover{
+  transition: 90ms all ease-in;
+  color: rgba(0,0,0,0.9);
+  border: 1px solid rgba(0,0,0,0.7)
+}
+
+/* width of each range input */
+.sliderWrap{
+  display:inline-flex;
+  margin: 12px;
+  margin-bottom:5px;
+  width: 15%;
+}
+
+.slide2, .slide, .slide3{
+  outline: none;
+  width: 80%;
+  border-radius: 8px;
+  background: rgba(0,0,0,0.25);
+  -webkit-appearance: none;
+}
+
+.slide2::before, .slide::before, .slide3::before{
+  content: "\b\b\b-\b";
+}
+.slide2::after, .slide::after, .slide3::after{
+  content: '\b＋\b\b';
+}
+
+label{
+  margin-right: 6px;
+}
+@media screen and (max-width: 900px){
+  .sliderWrap{
+    width: 30%;
+    margin:2px;
+  }
+  .slide2, .slide, .slide3{
+    -webkit-appearance: slider-horizontal;
+    background: none;
+  }
+  
+  canvas{
+    padding: 0px;
+  }
+
+}
+@media screen and (max-width: 900px) and (max-height: 500px){
+  canvas + div::after{
+    top: 0;
+  }
+}
